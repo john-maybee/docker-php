@@ -12,6 +12,7 @@ services:
       POSTGRES_DB: snowfall
     volumes:
       - ./postgres-data:/var/lib/postgresql/data
+      # TODO: Add create table and seed data. have example in my node docker project
     # Map 5433 on our computer to 5432 in docker
     # 5432 on our computer is already running postgres.
     ports:
